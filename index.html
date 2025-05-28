@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Simple UI: конструктор приложений для Android-устройств</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <link href="css/main.css" rel="stylesheet" type="text/css">
+      <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+      <link rel="icon" href="images/favicon.png" type="image/png">
+      <link rel="apple-touch-icon" sizes="144x144" href="images/favicon.png">
+   </head>
+   <body>
+      <!-- Yandex.Metrika counter --> <script async="" src="js/analytics.js"></script><script async="" src="js/tag.js"></script><script type="text/javascript">     (function(m,e,t,r,i,k,a){         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};         m[i].l=1*new Date();         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)     })(window, document,'script','//mc.yandex.ru/metrika/tag.js', 'ym');      ym(65950810, 'init', {accurateTrackBounce:true, trackLinks:true, webvisor:true, clickmap:true, params: {__ym: {isFromApi: 'yesIsFromApi'}}}); </script> 
+      <noscript>
+         <div><img src=https://mc.yandex.ru/watch/65950810 style="position:absolute; left:-9999px;" alt=""></div>
+      </noscript>
+      <!-- /Yandex.Metrika counter --><!-- Google Analytics --> <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-174936291-1', 'auto'); ga('send', 'pageview'); </script> <!-- End Google Analytics -->
+      <div class="is-wrapper">
+         <div class="is-section is-section-auto is-box is-bg-light">
+            <div class="is-overlay">
+               <div class="is-overlay-bg" style="display:none"></div>
+               <div class="is-overlay-color" style="display:none"></div>
+               <div class="is-overlay-content"></div>
+            </div>
+            <div class="is-boxes">
+               <div class="is-box-centered">
+                  <div class="is-container is-builder container" id="contentarea-dvgLE">
+                     <div class="row clearfix">
+                        <div class="column full"><br><br></div>
+                     </div>
+                     <div class="row clearfix">
+                        <div class="column full center">
+                           <div class="display">
+                              <h1>Simple UI</h1>
+                           </div>
+                           <p><span style="color: rgb(136, 136, 136);">Конструктор бизнес приложений для Andoid и Web</span></p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <p><b>SimpleUI </b>– это полностью бесплатный фреймворк для создания бизнес-приложений для Android с мгновенным развертыванием на устройствах. Это могут быть онлайн или полностью самостоятельные (офлайн) мобильные рабочие места для учетных систем (1С: Предприятие, SAP и других) для устройств на Android – мобильных телефонов, ТСД, планшетах, электронных киосках. Платформа исполняет пользовательские конфигурации с интерпретацией кода как локально (python или javascript) так и онлайн (на языке бек-систем) и ориентирована на максимальную производительность для высоконагруженных решений. С помощью этого же конструктора, семантики и набора команд можно создавать рабочие места для ПК на базе веб-клиентов, делать собственные облачные решения на открытом фреймворке SimpleWEB (на котором в свою очередь написан облачный конструктор для платформы). </p>
+                           <p><b>Главная миссия Simple – максимально упростить процессы разработки и поддержки</b> за счет специальной архитектуры решений, за счет структурирования визуальных форм, событий и их обработчиков. Это не No-code, так как я считаю No-Code недостаточно гибким и универсальным – это Low-code, который позволяет создавать решения, <b>с производительностью native-приложений и даже выше</b> (см. примеры). Это намеренно не кросс-платформенный фреймворк. Вместо этого, он максимально ориентирован на глубокое использование возможностей базовой платформы, стиля и рекомендаций Google, чего не достичь на кроссплатформенных фреймворках, которые вынуждены предлагать равные возможности на всех платформах. </p>
+                           <p>Одновременно, SimpleUI – это <b>исследовательский проект</b>, который непрерывно идет уже более 5 лет, цель которого – изыскивать методы и архитектуру для непрерывного упрощения процесса разработки. Это поиск философского камня – бесконечный процесс, какие-то технологии выстреливают, какие-то нет, но в целом эффективность инструмента непрерывно растет с каждым релизом. У этого процесса есть еще одна цель – получить архитектуру приложений, наиболее из всех фреймворков подходящую для LLM-моделей. В скором будущем ui-файлы будут генерироваться, а конструктор будет нужен только для просмотра и мелких правок. </p>
+                           <p>SimpleUI старается заставить <b>AI-возможности</b> реально работать, а не быть модной игрушкой для презентаций. Так, OCR(распознавание текста) с помощью специальной методики дает 100% точность и скорость, сопоставимую с штрихкодом и спустя уже много лет применения можно с уверенностью сказать что отсутствие возможности штрихкодирования или RFID это не приговор – артикулы, VIN-ы, инвентарные номера и другие число-буквенные метки читаются отлично. Уникальная методология ActiveCV, придуманная специально для SimpleUI позволяет визуализировать видеопоток и дополнить экраны совершенно новым способом взаимодействия, основанном на CV (компьютерном зрении) что позволяет ускорить выполнение складских и других учетных операций в разы. Голосовой помощник в сочетании с нечетким поиском по пользовательским датасетам дает ускорение поиска товара (на случай если нет ни штрихкодов ни текстовой маркировки). </p>
+                           <p><br></p>
+                        </div>
+                     </div>
+                     <div class="is-block is-block-slider">
+                        <div class="is-block-slider-slides">
+                           <div class="is-block-slider-slide row" style="background-color: rgb(236, 64, 122);">
+                              <div class="column full">
+                                 <div class="center margin-30">
+                                    <img src="images/7661260538.png" width="100%" data-lightbox-src="/uploads/8182418514.png" data-lightbox-size="650x684">
+                                    <div><b><span style="font-size: 24px !important; color: rgb(255, 255, 255);"> Работа с изображениями</span></b></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="is-block-slider-slide row" style="background-color: rgb(236, 64, 122);">
+                              <div class="column full">
+                                 <div class="center margin-30">
+                                    <img src="images/3671915223.png" width="100%" data-lightbox-src="/uploads/6103433763.png" data-lightbox-size="1643x1139">
+                                    <div><b><span style="font-size: 24px !important; color: rgb(255, 255, 255);"> Разные визуальные элементы</span></b></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="is-block-slider-slide row" style="background-color: rgb(236, 64, 122);">
+                              <div class="column full">
+                                 <div class="center margin-30">
+                                    <img src="images/506213154.png" width="100%" data-lightbox-src="/uploads/806415707.png" data-lightbox-size="1609x1137">
+                                    <div><b><span style="font-size: 24px !important; color: rgb(255, 255, 255);"> Разные визуальные элементы</span></b></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="is-block-slider-slide row" style="background-color: rgb(236, 64, 122);">
+                              <div class="column full">
+                                 <div class="center margin-30">
+                                    <img src="images/4597339333.png" width="100%" data-lightbox-src="/uploads/5873509157.png" data-lightbox-size="1498x889">
+                                    <div><b><span style="font-size: 24px !important; color: rgb(255, 255, 255);"> Различные детекторы (OCR и другие)</span></b></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="is-block-slider-slide row" style="background-color: rgb(255, 167, 38);">
+                              <div class="column full">
+                                 <div class="center margin-30">
+                                    <img src="images/2925758014.png" width="100%" data-lightbox-src="/uploads/4160752004.png" data-lightbox-size="1621x1138">
+                                    <p><font color="#ffffff"><span style="font-size: 24px;"><b>Векторная графика</b></span></font></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="is-block-slider-slide row" style="background-color: rgb(255, 167, 38);">
+                              <div class="column full">
+                                 <div class="center margin-30">
+                                    <img src="images/7366330209.png" width="100%" data-lightbox-src="/uploads/5759966437.png" data-lightbox-size="649x686">
+                                    <p><font color="#ffffff"><span style="font-size: 24px;"><b>Работа с холстом</b></span></font></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="is-block-slider-slide row" style="background-color: rgb(255, 167, 38);">
+                              <div class="column full">
+                                 <div class="center margin-30">
+                                    <img src="images/8185761914.png" width="100%" data-lightbox-src="/uploads/1931437199.png" data-lightbox-size="1652x1139">
+                                    <p><font color="#ffffff"><span style="font-size: 24px;"><b>ActiveCV(работа с видеопотоком)</b></span></font></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="is-block-slider-slide row" style="background-color: rgb(255, 167, 38);">
+                              <div class="column full">
+                                 <div class="center margin-30">
+                                    <img src="images/2801743480.png" width="100%" data-lightbox-src="/uploads/1534068146.png" data-lightbox-size="682x488">
+                                    <p><font color="#ffffff"><span style="font-size: 24px;"><b>HTML, печатные формы, JS</b></span></font></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h1>С чего начать?</h1>
+                           <p><font style="font-size: 16px !important;">Для того чтобы написать решение понадобится только <b>браузер и мобильный телефон</b> на Android в любой точке мира <b>без регистрации и облачного хранения</b> (конфигурации скачиваются в виде ui-файлов или через GitHub)  </font></p>
+                           <p><font style="font-size: 16px !important;">Вы можете разрабатывать свои решения на <a href="https://seditor.ru:1555/" target="_blank"><b>https://seditor.ru:1555/</b></a> либо <a href="https://github.com/dvdocumentation/web_simple_editor">скачать </a>этот конструктор локально и запустить у себя (для отладки и связи с бек-системой, если это требуется также можно скачать шину). Можно ничего специально не ставить на компьютер, но можно код обработчиков писать в своей IDE, связав с конфигурацией через GitHub</font></p>
+                           <p><font style="font-size: 16px !important;">Просто зайдите в конструктор Конфигурация-Новая конфигурация, установите SimpleUI (из GooglePlay или apk) и отсканируйте QR- код. Всё, конфигурация готова к работе! Можно сделать простые примеры из <a href="https://uitxt.readthedocs.io/ru/latest/gettingstarted.html">https://uitxt.readthedocs.io/ru/latest/gettingstarted.html</a></font></p>
+                           <p><font style="font-size: 16px !important;"><b>С каких обработчиков лучше начать? </b></font></p>
+                           <p><font style="font-size: 16px !important;">Раньше я рекомендовал онлайн, но сейчас pythonscript сравнялся по простоте, поэтому если вы знаете Python (но не охота на начальном этапе заморачиваться с подключаемыми файлами) – то pythonscript. Если вы умеете разрабатывать только на языке своей бек-системы, то начать конечно лучше с онлайн, а потом потихоньку переводить обработчики на python. </font></p>
+                           <p><font style="font-size: 16px !important;">Также, даже если у вас полностью онлайн-решение, с целью снижения нагрузки на бек можно несложные операции выносить на локальные обработчики, например set. Например если вам нужно всего лишь переключить экран, не стоит гонять запрос туда-сюда, сделайте set ShowScreen </font></p>
+                           <p><font style="font-size: 16px !important;">Также для полностью онлайн решений иногда нелишним вынести работу со своей справочной информацией в датасеты – преимущество по скорости и другие фичи.</font></p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h1 class="size-48 is-title1-48 is-title-bold is-upper">СТЕК ТЕХНОЛОГИЙ SIMPLE UI</h1>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h2>Принцип взаимодействия интерфейса, событий и обработчиков</h2>
+                           <p>Элементы форм, внешнее оборудование (например сканеры штрихкодов) и другие механизмы (например таймеры) порождают события. События обрабатываются в обработчиках либо онлайн (на стороне бек-системы) либо локально в приложении и в результате обработки в стек переменных помещаются переменные, которые отображаются на экранах, команды, управляющие приложением (переключение экранов, вывод списков, звуки и озвучка голосом и т.д.) </p>
+                           <p>Т.е. стек переменных связывает интерфейс, события и обработчики через данные и команды. </p>
+                           <p>И также стек переменных связывает локальные обработчики (иногда на разных языках) с онлайн-обработчиками – стек един и там, и там.</p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h2>Обработчики онлайн</h2>
+                           <p>SimpleUI выполняет код онлайн на стороне вашей учетной системы либо через HTTP-запрос либо через шину. Команды и переменные курсируют между устройством и бек-системой в запросах в виде стека переменных (HashMap). Синтаксис и принципы в обоих случаях для разработчика – идентичны. </p>
+                           <p><b>Вариант через HTTP-сервис </b></p>
+                           <p>В этом варианте потребуется со стороны учетной системы публикация http-сервиса. Тип обработчика в SimpleUI – онлайн. </p>
+                           <p>Для 1С это есть расширение SimpleUISplit (скачать <a href="https://disk.yandex.ru/d/4tDOY5SjhmQrxQ">тут</a>) нужно установить его, опубликовать http-сервис и прописать настройки как указано на картинке (настройки также можно передавать например через QR-код) </p>
+                           <p><b>Вариант через шину, через WebSocket </b></p>
+                           <p>Также, если нет желания или возможности публиковать веб-сервис наружу в Интернет и ваша система умеет работать с веб-сокетами, то можно работать через шину (тип обработчиков onlinews) Подробно описано тут <a href="https://infostart.ru/1c/articles/2305445/">https://infostart.ru/1c/articles/2305445/</a></p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h2>Локальные обработчики (оффлайн)</h2>
+                           <p></p>
+                           <ul>
+                              <li><b>pythonscript </b>– это полноценный Python 3.11, выполняемый как скрипт, код храниться прямо в ui-файле конфигурации(в base64). Предустановлены стандартные и популярные библиотеки, но также есть возможность подключать свои python-библиотеки</li>
+                              <li><b>python </b>и <b>pythonargs </b>– python-обработчики, хранимые при разработке в отдельных файлах (но при сборке конфы они также записываются в нее) </li>
+                              <li><b>javascript </b>– локальный интерпретатор JavaScript </li>
+                              <li><b>pythonbytes </b>– для экспериментов с OpenCV </li>
+                              <li><b>set </b>– может положить/прочитать переменную в стек переменных. Не смотря на примитивность используется часто.</li>
+                           </ul>
+                           <p></p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h2>Архитектура обработчиков событий </h2>
+                           <p></p>
+                           <ul>
+                              <li>Все события, возникающие в системе, и внутренние и внешние связаны с обработчиками через массив обработчиков (по сути JSON-массив объектов) </li>
+                              <li>Такая архитектура есть для экрана и есть общие обработчики вне экранов – для общих и фоновых событий системы (например, получение внешнего интента) </li>
+                              <li>Обработчики могут быть синхронные(<b>run</b>), асинхронные (<b>runasync</b>) и запасающиеся в рамках блокирующего систему прогресс-бара (<b>runprogress</b>) </li>
+                              <li>На одно событие можно повесить сколько угодно обработчиков – синхронные выполнятся последовательно в порядке очереди, а асинхронные запустятся последовательно, а выполнятся когда выполнятся </li>
+                              <li>Каждый вызов обработчика может выполняться локально или онлайн одним из типов обработчиков (см. выше) </li>
+                              <li>У каждого вызова обработчика, можно определить коллбек по завершению – postExecute. В таком случаю по завершению обработчика выполнится массив из одного или нескольких обработчиков, которые в свою очередь тоже могут иметь свои postExecute – т.е. цепочки могут быть бесконечны. Обычно это применяется для асинхронных обработчиков (например, чтобы перерисовать экран по завершении) </li>
+                              <li>Кстати, в SimpleUI после обработки ввода (событие onInput) всегда происзодит перерисовка экрана (с событиями onStart/onPostStart), которую можно отключить флагом noRefresh </li>
+                              <li>Обычно массив обработчиков определяется в конструкторе визуально, но его также можно запустить из кода (т.е. создать событие и запустить на него массив обработчиков) командой RunEvent</li>
+                           </ul>
+                           <p></p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h2>Долгие процессы и фоновое выполнение</h2>
+                           <p></p>
+                           <ul>
+                              <li><b>Воркеры </b>для гарантированного выполнения долгих процессов <a href="https://infostart.ru/1c/articles/1825700/">https://infostart.ru/1c/articles/1825700/ </a></li>
+                              <li><b>Фоновый сервис</b>, постоянно работающий, даже при выключенном приложении (закреплен в шторке), в котором можно принимать и обрабатывать внешние события со своим фоновым контекстом (без экранов). Не очень уже актуальная публикация тут <a href="https://infostart.ru/1c/articles/1458666/">https://infostart.ru/1c/articles/1458666/ </a></li>
+                              <li>runasync и runprogress для долгих задач </li>
+                              <li>Специальные методы для скачивания больших файлов <a href="https://t.me/devsimpleui/156">https://t.me/devsimpleui/156</a> и режим передачи файлов в SimpleBus</li>
+                           </ul>
+                           <p></p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h2>Конфигурации и репозиторий</h2>
+                           <p>Конфигурация – это по сути JSON-файл (но с расширением<b> .ui</b>) в котром хранятся экраны, обработчики и прочая структура. Конфигурация может хоститься где то в интернете (как в случае с seditor.ru), ее можно разместить на своем сетевом ресурсе либо можно ее передать локально. Раз скачавшись она хранится и открывается локально, но если в настройках прописан адрес источника то обновляется из него при запуске или специальном обновлении </p>
+                           <p>Конфигурации можно поставить локально в <b>репозиторий</b>. Это локальное хранилище, откуда между конфигурациями можно переключаться, также они локально обновляются и также они могут работать в фоне, например получать сообщения из шины SimpleBus обрабатывать их в фоне и как то взаимодействовать с пользователем </p>
+                           <p>И также есть возможность выделить любой процесс в самостоятельный <b>SUIP-файл</b>, объединяющий конфигурацию и данные, что то наподобие Excel-файла с макросами, только исполняемый не на Excel, а на SimpleUI</p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h2>Хранение</h2>
+                           <p>Для локально хранения можно использовать как SQL(SQLite) так и специально разработанные NoSQL- СУБД и специальный механизм резидентных в памяти датасетов с возможностью сохранения/загрузки </p>
+                           <p>Актуальная и рекомендуемая конфигурация хранения предполагает использовать следующие инструменты для локального хранения в зависимости от характера данных и предполагаемого сценария использования (можно комбинировать эти инструменты): </p>
+                           <p></p>
+                           <ul>
+                              <li><b>датасеты </b>резидентные в памяти с возможностью сохранить/загрузить для хранения данных внешних систем – справочников, ссылок, документов. Подробнее – тут<a href="https://habr.com/ru/articles/892140/"> https://habr.com/ru/articles/892140/ </a></li>
+                              <li>БД <b>ключ/значение</b> для хранения простых данных – например настроек приложения, констант, значений ввода, содержимого экранов </li>
+                              <li><b>Pelican </b>для собственных данных и всего остальных задач. Это СУБД, разработанная специально для Simple, которая в принципе по функционалу конечно же может заменить два предыдущих пункта, но датасеты имеют козырь в виде мощной интеграции в механизмы, а ключ/значение проще для ситуаций когда нужно просто положить/прочитать значение типа константы. Подробнее тут <a href="https://infostart.ru/1c/tools/2127994/">https://infostart.ru/1c/tools/2127994/ </a></li>
+                           </ul>
+                           <p></p>
+                           <p>В качестве дополнительной альтернативы можно использовать <b>SQLite </b>, в т.ч. совместно с ORM Pony </p>
+                           <p><br></p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h2>Связь</h2>
+                           <p><b>Обмен с внешними системами: </b></p>
+                           <p></p>
+                           <ul>
+                              <li>Онлайн обработчики о которых выше </li>
+                              <li>модуль <b>requests </b>в python-обработчиках и <b>XMLHttpRequest </b>в javascript-обработчиках </li>
+                              <li>Рекомендуемый способ: шина <b>SimpleBus </b>для обмена сообщениям, данными (с кешированием и гарантированной доставкой, поддержкой постоянного соединения) и большими файлами Подробности тут: https://infostart.ru/1c/tools/2169197/ </li>
+                           </ul>
+                           <p></p>
+                           <p><b>Для больших файлов: </b></p>
+                           <p></p>
+                           <ul>
+                              <li>команда download в python-обработчиках </li>
+                              <li>передача больших файлов через SimpleBus </li>
+                              <li>воркеры StartDownloadWorkRequest/ StartUploadWorkRequest </li>
+                           </ul>
+                           <p></p>
+                           <p><b>WebSocket</b>-клиент (помимо шины SimpleBus, которая тоже работает через WebSocket но со своими особенностями) </p>
+                           <p></p>
+                           <ul>
+                              <li>встроенный веб-сокет клиент для любых целей с управлением через команды стека переменных и общими событиями. Рекомендуется использовать подключение к шине, так оно имеет больше возможностей на стороне приложения (настройки, поддержка соединения, работа из фона для неактивных конфигураций – из репо и др.) </li>
+                           </ul>
+                           <p></p>
+                           <p><b>Bluetooth </b></p>
+                           <p></p>
+                           <ul>
+                              <li>работа в режиме клиента и сервера через команды стека перменных и более расширенно через модуль SimpleBluetooth для python-обработчиков </li>
+                           </ul>
+                           <p></p>
+                           <p><b>NFC </b></p>
+                           <p></p>
+                           <ul>
+                              <li>считывание любых меток из процесса </li>
+                              <li>подписка на метки определенного формата на уровне приложения (для запуска из Android) </li>
+                           </ul>
+                           <p></p>
+                           <p><b>p2p передача данных в отсутствии связи </b></p>
+                           <p></p>
+                           <ul>
+                              <li><b>DirectWIFI</b> в полнодуплексном режиме (каждое устройство и клиент и сервер) <a href="https://t.me/devsimpleui/136">https://t.me/devsimpleui/136 </a></li>
+                              <li><b>Оптическая передача p2p</b> данных между устройствами <a href="https://t.me/devsimpleui/136">https://t.me/devsimpleui/136 </a></li>
+                              <li><b>Оптическая передача данных ActiveCV</b> Видео: <a href="https://youtu.be/9Gwho6bWeKk">https://youtu.be/9Gwho6bWeKk</a> Исходники: <a href="https://github.com/dvdocumentation/simpleui_samples/tree/main/QR%20data%20sending">https://github.com/dvdocumentation/simpleui_samples/tree/main/QR%20data%20sending</a> и <a href="https://github.com/dvdocumentation/simpleui_samples/tree/main/QR%20data%20sending">https://github.com/dvdocumentation/simpleui_samples/tree/main/QR%20data%20sending </a></li>
+                           </ul>
+                           <p><b>GPS</b></p>
+                           <p></p>
+                           <ul>
+                              <li>Возможно непрерывное получение координат устройства</li>
+                           </ul>
+                           <p></p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h2>Визуальные элементы</h2>
+                           <p>Поддерживается почти весь набор стандартных виджетов Android SDK </p>
+                           <p>В конструкторе визуальные элементы задаются с помощью вложенных друг в друга <b>контейнеров </b>(LinearLayout в AndroidSDK). Положение в контейнере может быть «На весь контейнер», «По размеру» и пропорционально весам (например если нужно горизонтально расположить 3 надписи с пропорциями ширины 1, 3 и 2 то нужно Ширину задать =0(Вручную), а веса поставить 1, 3 и 2). </p>
+                           <p>Разметкой контейнерами задается вид экранов, окон диалога, элементов списков </p>
+                           <p>У элементов можно настроить рамки и радиусы закругления, в т.ч. полный круг. </p>
+                           <p>Если не хватает возможностей конструктора и контейнеров, то есть вариант произвольной XML-разметки: <a href="https://infostart.ru/1c/articles/1983895/">https://infostart.ru/1c/articles/1983895/ </a></p>
+                           <p>Также есть особые визуальные элементы, которые хотелось бы выделить отдельно:</p>
+                           <p></p>
+                           <ul>
+                              <li><b>HTML </b>(с JS) – можно встраивать свой HTML с JavaScript. Особенно хорошо это работает с Jinja, можно встраивать свои печатные формы (легко переносить их из 1С). Подробности тут: <a href="https://infostart.ru/1c/articles/1716745/">https://infostart.ru/1c/articles/1716745/ </a></li>
+                              <li><b>Векторная графика</b> – для рисования топологии, схем, тепловых карт. Также «режим холста» для рисования на экране. Подробности тут https://infostart.ru/1c/articles/1736200/ </li>
+                              <li><b>ActiveCV </b>– визуализация видеопотока (CV) с ML-детекторами (штрихкодов, OCR, лиц и т.д.). Подробнее тут <a href="https://habr.com/ru/articles/874560/">https://habr.com/ru/articles/874560/ </a></li>
+                              <li><b>Стартовый экран</b> - меню процессов формируется автоматически, но можно использовать экран для переопределения стартового меню: <a href="https://infostart.ru/1c/tools/2251192/">https://infostart.ru/1c/tools/2251192/ </a></li>
+                              <li>
+                                 <b>Работа с картинками</b> – специальные элементы чтобы разработчику было проще работать с картинками и камерой – галереи. А для размещения просто картинки в контейнере, можно использовать просто конструкции 
+                                 <b>
+                                    ~
+                                    <путь к файлу>
+                                 </b>
+                                 или 
+                                 <b>
+                                    ^
+                                    <имя ресурса>
+                                 </b>
+                                 (для статических медиафайлов) (*еще поддерживается base64, но не рекомендуется из-за производительности) 
+                              </li>
+                              <li><b>Html-разметка</b> во всех надписях, позволяет оживить интерфейс. В любом тексте любых элементов можно использовать теги, например “Это <b>выделенный</b> текст”</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h2>Сообщения, звуки, голос</h2>
+                           <p></p>
+                           <ul>
+                              <li>Командой <b>speak</b>(“Привет мир”) (через стек тоже команда speak) можно озвучить текст </li>
+                              <li><b>toast </b>– выводит всплывающее сообщение </li>
+                              <li><b>beep </b>– короткий звуковой сигнал (можно настраивать 99 вариантов звуков </li>
+                              <li>есть всевозможные уведомления (<b>notification</b>) – для вывода сообщений в шторку уведомлений Андроид </li>
+                              <li>Команда <b>listen </b>(или аналогичный элемент экрана) запускает распознавание голоса, в т.ч. вне экрана – фоном. Сочетание speak и listen позволяет сделать что то наподобие голосового помощника (но постоянно слушать микрофон она не умеет)</li>
+                           </ul>
+                           <p></p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h2>Оборудование</h2>
+                           <p>Работа с любыми <b>сканерами/ТСД </b>из экрана (элемент экрана Штрихкод) с подключением через:</p>
+                           <p></p>
+                           <ul>
+                              <li>подписку на intent сканера (рекомендуется этот вариант настройки) </li>
+                              <li>подключение в разных режимах эмуляции клавиатуры: wedge as keys, строка с CR/LF и подобное </li>
+                              <li>подключение внешнего Bluetooth-сканера через настройки приложения (для устройств без встроенного сканера) </li>
+                              <li>сканирование камерой (элемент Штрихкод) или камерой через ActiveCV </li>
+                              <li>расширенный режим поддержки для ТСД Urovo </li>
+                           </ul>
+                           <p></p>
+                           <p>Работа с событиями сканера из сервиса событий (<b>вне экранов</b>):</p>
+                           <p></p>
+                           <ul>
+                              <li>работа через intent </li>
+                              <li>работа с Bluetooth-сканером через настройки </li>
+                           </ul>
+                           <p></p>
+                           <p>Работа с внешними принтерами через <b>Bluetooth/USB/TCP-IP </b></p>
+                           <p>Имеется возможность отправлять этикетки на принтер как в виде HTML так и <b>на языках разметки</b> (ZPL, TSP, PCL, ESC/POS) </p>
+                           <p>Отправка данных на порт <b>USB</b>(в режиме аксессуара) </p>
+                           <p>Отправка на <b>TCP/IP</b> порты</p>
+                           <p>Отдельные расширенные функции для некоторых ТСД (Urovo, Meferi)</p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column third">
+                           <h1>Готовые решения</h1>
+                           <p>Готовые решения на базе SimpleUI от компании СИМПЛ:</p>
+                           <p><a href="https://www.simple-kit.ru/">https://www.simple-kit.ru/</a></p>
+                        </div>
+                        <div class="column two-third"><img src="images/2743087045.png" data-lightbox-src="/uploads/9927480914.png" data-lightbox-size="1324x481"></div>
+                     </div>
+                     <div class="is-block row" style="background-color: rgb(236, 239, 241);">
+                        <div class="column full">
+                           <h2>Полезные ссылки</h2>
+                           <h1><font style="font-size: 24px !important; color: rgb(198, 40, 40);">Телеграмм канал <a href="https://t.me/devsimpleui" target="_blank">https://t.me/devsimpleui</a></font></h1>
+                           <p>Форум разработчиков в телеграмм: <a href="https://t.me/simpledevchat">https://t.me/simpledevchat</a></p>
+                           <p>Он-лайн документация : <a href="https://uitxt.readthedocs.io/">https://uitxt.readthedocs.io/</a> </p>
+                           <p><font style="font-size: 24px !important;"><b>Статья в Habr которая все объясняет (на момент начала 2023 года): <a href="https://habr.com/ru/articles/720610/">https://habr.com/ru/articles/720610/</a></b></font></p>
+                           <p><font style="font-size: 24px !important;"><b>Статья в Habr по ActiveCV 2: <a href="https://habr.com/ru/articles/874560/">https://habr.com/ru/articles/874560/ </a></b></font></p>
+                           <p><font style="font-size: 24px !important;"></font></p>
+                           <p><span style="font-size: 1.07em;">Статья на Инфостарт по мобильной платформе: </span><a href="https://infostart.ru/public/1153616/" style="font-size: 1.07em;">https://infostart.ru/public/1153616/</a></p>
+                           <p>Статья по Web-платформе: <a href="https://infostart.ru/1c/articles/1777420/">https://infostart.ru/1c/articles/1777420/</a></p>
+                           <p>Облачная WMS pureWMS: <a href="http://wms.simpleui.ru">wms.simpleui.ru</a></p>
+                           <p><span style="font-size: 1.07em;">Видео о программе </span><a href="https://www.youtube.com/channel/UCkQSnRP5BvRtw_UQkJ5hjZg" target="_blank" style="font-size: 1.07em;">тут</a><span style="font-size: 1.07em;">  </span></p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column third">
+                           <div class="list">
+                              <i class="icon icon-fontawesome-ok"></i>
+                              <h3>SimpleWEB</h3>
+                              <p>Репозиторий библиотеки веб-клиента на семантике Simple: <a href="https://github.com/dvdocumentation/simpleweb">https://github.com/dvdocumentation/simpleweb</a></p>
+                           </div>
+                        </div>
+                        <div class="column third">
+                           <div class="list">
+                              <i class="icon icon-fontawesome-ok"></i>
+                              <h3>Онлайн-редактор</h3>
+                              <p>Редактор конфигураций, написанный на SImpleWEB: <a href="https://github.com/dvdocumentation/web_simple_editor">https://github.com/dvdocumentation/web_simple_editor</a></p>
+                           </div>
+                        </div>
+                        <div class="column third">
+                           <div class="list">
+                              <i class="icon icon-fontawesome-ok"></i>
+                              <h3>Pelican</h3>
+                              <p>Собственная СУБД NoSQL экосистемы Simple: <a href="https://github.com/dvdocumentation/pelican_dbms">https://github.com/dvdocumentation/pelican_dbms</a></p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column third">
+                           <div class="list">
+                              <i class="icon icon-fontawesome-ok"></i>
+                              <h3>SimpleBUS</h3>
+                              <p>Шина данных: <a href="https://github.com/dvdocumentation/simplebus">https://github.com/dvdocumentation/simplebus</a></p>
+                           </div>
+                        </div>
+                        <div class="column third">
+                           <div class="list">
+                              <i class="icon icon-fontawesome-ok"></i>
+                              <h3>SimpleBUS lite</h3>
+                              <p>Упрощенный скрипт, которого хватит для онлайн-обработчиков (onlinews) и отладки: <a href="https://github.com/dvdocumentation/simplebuslite">https://github.com/dvdocumentation/simplebuslite</a></p>
+                           </div>
+                        </div>
+                        <div class="column third">
+                           <div class="list">
+                              <i class="icon icon-fontawesome-ok"></i>
+                              <h3>Simple для слабых устройств</h3>
+                              <p>Очень упрощенный (и уже устаревший скрипт) для слабых клиентов (писался для RaspberryPI): <a href="https://github.com/dvdocumentation/simpleui_desktop">https://github.com/dvdocumentation/simpleui_desktop</a></p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full">
+                           <h1 class="size-96 is-title1-96 is-title-lite" style="text-align: left;"><font style="font-size: 50px !important;"><b>Файлы для скачивания:</b></font></h1>
+                        </div>
+                     </div>
+                     <div class="is-block row" style="background-color: rgb(255, 255, 255);">
+                        <div class="column full" style="text-align: left;"><a href="https://disk.yandex.ru/d/toVAK_zYbhjpSA" class="is-btn is-upper edit" target="_blank"><font style="font-size: 24px !important;"><font>СКАЧАТЬ apk (ver 14.35.55 )</font></font></a></div>
+                        <font style="font-size: 24px !important;"></font>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full" style="text-align: left;"><a href="https://play.google.com/store/apps/details?id=ru.travelfood.simple_ui" class="is-btn is-btn-ghost1 is-upper is-rounded-30 edit">скачать приложение в Google play</a></div>
+                     </div>
+                     <div class="is-block row" style="background-color: rgb(252, 228, 236);">
+                        <div class="column full">
+                           <h1>Коммерческая поддержка</h1>
+                           <p>Платформа полностью бесплатная, но если интересует поддержка -  саппорт, разработка прототипов конфигураций (с которыми вы можете дальше продолжить свой проект) и прочее, то пишите мне через форму обратной связи на этом сайте.</p>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full center">
+                           <h1 style="font-size:3em;margin:1.5em 0">О авторе и мотивации</h1>
+                        </div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column third center">
+                           <img src="images/1961122755.jpg" style="margin-top: 1em;" alt="" data-lightbox-src="/uploads/1898778919.jpg" data-lightbox-size="1975x2026">
+                           <div class="is-social edit"><a href="https://infostart.ru/profile/129563/"><i class="icon ion-social-rss"></i></a><a href="mailto:dv1555@hotmail.com"><i class="icon icon-fontawesome-mail-alt"></i></a></div>
+                        </div>
+                        <div class="column two-third">
+                           <p><font style="font-size: 18px !important;">Меня зовут <b>Дмитрий Воронцов</b>. Я занимаюсь внедрением систем 1С:Предприятие с 2002 года. Разработать и поддерживать собственный продукт на отличной от 1С платформе меня побудили потребности моих проектов которые не могла закрыть платформа 1С. Нативное приложение дает то, что не может мобильная платформа - легкий и производительный клиент, распознавание текста, работа с речью, встроенный веб-сервер и многое, многое другое. Я развиваю этот проект с 2018 года. Изначально он появился как клиент для УПП/ERP для участков производства, потом как клиент WMS-систем, а сейчас он используется в широком спектре назначений - логистики, управлении бизнес процессами и т.д. Теперь это полноценная самостоятельная платформа которая может работать без 1С и может интегрироваться с любыми системами учета. Ну и во главе угла стоит принцип простоты разработки, чему обязывает название <b>Simple.</b></font></p>
+                        </div>
+                     </div>
+                     <div class="row clearfix">
+                        <div class="column full">
+                           <hr>
+                        </div>
+                     </div>
+                     <div class="row clearfix">
+                        <div class="column full"><br><br></div>
+                     </div>
+                     <div class="row clearfix">
+                        <div class="column full"><br>Телеграмм и YouTube</div>
+                     </div>
+                     <div class="is-block row">
+                        <div class="column full center">
+                           <div class="clearfix is-boxed-button-big"><a href="https://t.me/devsimpleui" style="background-color: #0088cc;"><i class="icon icon-fontawesome-telegram"></i></a><a href="https://www.youtube.com/channel/UCkQSnRP5BvRtw_UQkJ5hjZg" style="background-color: #E20000;"><i class="icon icon-fontawesome-youtube-play"></i></a></div>
+                        </div>
+                     </div>
+                     <div class="row clearfix">
+                        <div class="column full"><br><br></div>
+                     </div>
+                     <div class="row clearfix" style="background-color: rgb(225, 243, 251);">
+                        <div class="column full center">
+                           <h1><span style="font-size: 36px;"><br></span></h1>
+                           <h1><span style="font-size: 18px;">По вопросам сотрудничества:</span></h1>
+                           <div><span style="font-size: 18px;"><br></span></div>
+                           <div>
+                              <span style="font-size: 18px;">
+                                 <div class="edit"><a href="" class="btn btn-primary edit" data-params="{" type":"feedback","feedback":{"fbuid":"342b649aedb3469cb9bac89ae7251ff4"}}"="">ЗАДАТЬ ВОПРОС АВТОРУ</a></div>
+                                 <br>
+                              </span>
+                           </div>
+                           <div><span style="font-size: 18px;"><br></span></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <meta name="google-site-verification" content="AmNxjidWfM1UrG-7fpPssoB0-66vQAbqOvsQz4Q8gUQ">
+         </div>
+      </div>
+      <script src="js/main.js"></script>
+   </body>
+</html>
